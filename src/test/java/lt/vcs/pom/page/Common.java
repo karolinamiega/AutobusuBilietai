@@ -47,5 +47,13 @@ public class Common {
         getElements(locator).forEach(WebElement::click);
     }
 
+    public static String getTabTitle() {
+        return Driver.getDriver().getTitle();
+    }
+
+    public static String getCurrentUrl() {
+        return Driver.getDriver().getCurrentUrl();
+    }
+
 }
 
